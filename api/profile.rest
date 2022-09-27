@@ -1,0 +1,48 @@
+@URL = http://localhost:4000
+@TYPE = /api
+###
+POST {{URL}}{{TYPE}}/ownerLogin
+Content-Type: application/json
+
+{
+    "email":"owner@boiler.com",
+    "password":"qwe$7500"
+}
+
+###
+DELETE {{URL}}{{TYPE}}/checkdelete/1234566/abcdfv
+Content-Type: application/json
+
+### add Profile
+POST {{URL}}{{TYPE}}/addProfile
+Content-Type: application/json
+
+{
+    "name":"owner",
+    "email":"owner@boiler.com",
+    "phone":9042141018
+}
+###
+DELETE {{URL}}{{TYPE}}/deleteProfileById/5f3d228d25c9297349aa9003
+Content-Type: application/json
+
+###
+GET  {{URL}}{{TYPE}}/getProfile
+Content-Type: application/json
+
+###
+POST {{URL}}{{TYPE}}/updateProfileById
+Content-Type: application/json
+
+{
+     "_id":"5f4a89c6419015149ded70f7",
+    "name":"customer",
+     "email":"customer@boiler.com",
+    "phone":9042141018,
+
+}
+
+###
+
+GET  {{URL}}{{TYPE}}/getbyIDProfile/5f3d228d25c9297349aa9003
+Content-Type: application/json
