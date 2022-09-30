@@ -44,5 +44,5 @@ Content-Type: application/json
 
 ###
 
-GET  {{URL}}{{TYPE}}/getbyIDProfile/5f3d228d25c9297349aa9003
+GET  {{URL}}{{TYPE}}/getbyIDProfile/rbahi@gmail.com
 Content-Type: application/json
